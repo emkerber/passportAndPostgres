@@ -1,0 +1,29 @@
+{
+  "name": "passport_walkthrough",
+  "version": "1.0.0",
+  "description": "*Note: this guide assumes you already have a basic express web server with body-parser set up*",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emkerber/passport_guide.git"
+  },
+  "author": "Liz Kerber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emkerber/passport_guide/issues"
+  },
+  "homepage": "https://github.com/emkerber/passport_guide#readme"
+}
