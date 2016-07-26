@@ -1,3 +1,5 @@
+This was a solo assignment at Prime Digital Academy. Below are the instructions provided.
+
 *Note: this guide assumes you already have a basic express web server with body-parser set up*
 
 Passport is authentication middleware for Node.js.
