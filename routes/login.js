@@ -9,7 +9,8 @@ var path = require('path');
 // });
 
 router.get('/', function(request, response, next) {
-  response.json(request.isAuthenticated());
+  // response.json(request.isAuthenticated());
+  response.sendFile(path.resolve(__dirname, '../public/views/login.html'));
 });
 
 router.post('/',

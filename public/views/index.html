@@ -1,23 +1,11 @@
 <!DOCTYPE html>
-<html ng-app="catApp">
+<html>
   <head lang="en">
     <meta charset="UTF-8" />
     <title>Passport Guide</title>
-    <script src="vendor/angular/angular.min.js"></script>
-    <script src="assets/scripts/client.min.js"></script>
   </head>
-  <body ng-controller="CatController as catz">
-       <p ng-show="catz.cat.name">Your new cats name is: {{ catz.cat.name }}</p>
-       <p ng-hide="catz.cat.name">Enter your new cat's name!</p>
-
-       <form novalidate>
-           Name: <input type="text" ng-model="catz.cat.name" /><br />
-           <input type="submit" ng-click="catz.add(catz.cat)" value="Save"/>
-       </form>
-
-       <h4>Cats</h4>
-       <ul>
-           <li ng-repeat="cat in catz.cats">{{ cat.name }}</li>
-       </ul>
+  <body>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
   </body>
 </html>
