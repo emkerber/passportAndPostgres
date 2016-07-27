@@ -1,10 +1,11 @@
 
 angular.module('catApp', []);
 
-angular.module('catApp').controller('CatController', function($http) {
+angular.module('catApp').controller('CatController', ['$http', function($http) {
 
   var vm = this;
 
+   vm.car ={};
    vm.cats = [];
    var fetchCats = function() {
        return $http.get('/cats').then(function(response){
@@ -20,4 +21,4 @@ angular.module('catApp').controller('CatController', function($http) {
        return $http.post('/add', cat).then(fetchCats());
    };
    fetchCats();
-});
+}]);
