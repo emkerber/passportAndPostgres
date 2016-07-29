@@ -4,7 +4,7 @@ var bcrypt = require('bcrypt');
 SALT_WORK_FACTOR = 10;
 
 var config = {
-  datapase: 'passport',
+  database: 'passport',
   port: 5432,
   max: 10, //max clients in pool
   idleTimeoutMillis: 30000 //how long a client can remain idle before being closed

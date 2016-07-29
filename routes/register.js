@@ -1,13 +1,13 @@
 var router = require('express').Router();
 var path = require('path');
-var Users = require('../models/user');
+var User = require('../models/user');
 
 router.get('/', function(request, response) {
   response.sendFile(path.join(__dirname, '../public/views/register.html'));
 });
 
 router.post('/', function(request, response) {
-  Users.create(request.body.username, request.body.password, function(err) {
+  User.create(request.body.username, request.body.password, function(err) {
     if(err) {
       console.log('Error posting', err)
       response.sendStatus(500);
