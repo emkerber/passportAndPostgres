@@ -66,6 +66,10 @@ function findAndComparePassword(username, candidatePassword, callback) {
       return callback(err);
     }
 
+    if (!user) {
+      return callback(err);
+    };
+
     bcrypt.compare(candidatePassword, user.password, function(err, isMatch) {
       if (err) {
         console.log('Error comparing passwords', err);
@@ -76,6 +80,7 @@ function findAndComparePassword(username, candidatePassword, callback) {
       };
     });
   });
+
 }
 
 function findById(id, callback) {
