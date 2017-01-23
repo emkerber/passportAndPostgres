@@ -371,3 +371,6 @@ That’s it! You have users authenticating and you’re storing encrypted passwo
 ![Bill Murray says, "Good job".](bill.jpg)
 
 <b id="f1">1</b> Somewhat helpful description of the flow: http://stackoverflow.com/questions/27637609/understanding-passport-serialize-deserialize [↩](#a1)
+
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/emkerber/passportAndPostgres.svg)](https://greenkeeper.io/)
