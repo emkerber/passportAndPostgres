@@ -5,7 +5,7 @@
   "main": "Gruntfile.js",
   "dependencies": {
     "angular": "^1.5.8",
-    "bcrypt": "^0.8.7",
+    "bcrypt": "^1.0.2",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-session": "^1.14.0",
